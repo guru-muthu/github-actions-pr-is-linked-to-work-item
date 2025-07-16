@@ -23,6 +23,7 @@ async function run(): Promise<void> {
 
     // if the sender in the azure-boards bot or dependabot, then exit code
     // nothing needs to be done
+    console.log('Action started. Sender:', sender_login);
     if (sender_login === "dependabot[bot]") {
       console.log(`dependabot[bot] sender, exiting action.`)
       return
