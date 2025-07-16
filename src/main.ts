@@ -19,7 +19,9 @@ async function run(): Promise<void> {
 
     const octokit: InstanceType<typeof GitHub> = github.getOctokit(github_token)   
     
-    console.log('sender:' sender_login)
+    // @ts-ignore
+    // @ts-ignore
+    console.log('sender: ', sender_login);
 
     // if the sender in the azure-boards bot or dependabot, then exit code
     // nothing needs to be done
