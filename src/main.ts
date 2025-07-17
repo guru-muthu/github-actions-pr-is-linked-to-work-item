@@ -21,7 +21,7 @@ async function run(): Promise<void> {
     
     // @ts-ignore
     // @ts-ignore
-    console.log('sender: ', sender_login);
+    console.log('sender: ', sender_login)
 
     // if the sender in the azure-boards bot or dependabot, then exit code
     // nothing needs to be done
